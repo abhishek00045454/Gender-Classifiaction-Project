@@ -91,7 +91,7 @@ open up you local host and port
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken
+    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/gender
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -145,9 +145,9 @@ s3cEZKH5yytiVnJ3h+eI3qhhzf9q1vNwEi6+q+WGdd+ACRCZ7JD6
 
 docker build -t chickenapp.azurecr.io/chicken:latest .
 
-docker login chickenapp.azurecr.io
+docker login genderapp.azurecr.io
 
-docker push chickenapp.azurecr.io/chicken:latest
+docker push genderapp.azurecr.io/gender:latest
 
 
 ## Deployment Steps:
